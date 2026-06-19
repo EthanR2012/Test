@@ -16,4 +16,9 @@ lowest = min(students.values())
 print(f"Student with the highest is {students[highest]}")
 print(f"Student with the lowest is {students[highest]}")
 
-search = 
+search = input("Enter a student name: ")
+score = students.get(search)
+if score is not None:
+    print(search,"scored",score)
+else:
+    print("Sorry student was not found.")
